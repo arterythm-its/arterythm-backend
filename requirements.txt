@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+httpx
+geopy
+pandas
+numpy
+tensorflow
+scikit-learn
