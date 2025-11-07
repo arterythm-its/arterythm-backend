@@ -6,3 +6,4 @@ pandas
 numpy
 tensorflow
 scikit-learn
+httpx[http2]
