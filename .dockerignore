@@ -1,0 +1,12 @@
+# Abaikan folder Virtual Environment lokal
+.venv
+venv
+
+# Abaikan cache Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Abaikan file cache/junk dari OS
+.DS_Store
+Thumbs.db
