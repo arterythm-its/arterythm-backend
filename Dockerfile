@@ -21,4 +21,4 @@ COPY . .
 # Langkah 6: Tentukan Perintah untuk Menjalankan Server
 # Render secara otomatis menyediakan variabel $PORT
 # Kita TIDAK menggunakan --reload di produksi
-CMD ["uvicorn", "coba:app", "--host", "0.0.0.0", "--port", "$PORT"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
