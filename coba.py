@@ -219,11 +219,15 @@ def run_prediction_pipeline(ppg_signal_raw: List[float]) -> Dict:
     mean_prob = float(np.mean(y_pred_prob))
     
     if afib_windows > (total_windows * 0.1): # Contoh: Jika > 10% window adalah AFib
-        diagnosis = "Kemungkinan Atrial Fibrilasi"
+        diagnosis = "Beresiko AFib"
+        print(f"Hasil: {diagnosis} silahkan konsultasi dengan dokter")
     else:
-        diagnosis = "Normal"
+        diagnosis = "Tidak Beresiko AFib"
+        print(f"Hasil: {diagnosis}")
         
-    print(f"Hasil: {diagnosis} (AFib Windows: {afib_windows}/{total_windows})")
+    # print(f"Hasil: {diagnosis} (AFib Windows: {afib_windows}/{total_windows})")
+    
+
     
     return {
         "diagnosis": diagnosis,
